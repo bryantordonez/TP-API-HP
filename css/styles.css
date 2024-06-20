@@ -1,104 +1,123 @@
 @font-face {
   font-family: 'harrypotter';
-  src: url(../assets/HARRYP__.TTF) format('truetype');
-}
-
-.namelogo {
-  font-family: Arial, sans-serif;
-}
-
-.namelogo .harrypotter {
-  font-family: 'harrypotter', Arial, sans-serif !important;
-  font-size: xx-large;
-  color: rgb(220, 203, 20);
+  src: url(../assets/fonts/HARRYP__.TTF) format('truetype');
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  background-image: url(../assets/images/hogwarts.jpg);
 }
-  
+
 header {
-    background-color: #343a40;
-    color: white;
-    padding: 1em 0;
+  background-color: #343a40;
+  color: white;
+  padding: 1em 0;
 }
-  
+
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
   padding: 0;
 }
-  
+
 nav ul li {
   margin: 0 1em;
 }
-  
+
 nav ul li a {
   color: white;
   text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s;
 }
-  
+
+nav ul li a:hover {
+  color: #d4af37;
+}
+
 main {
   padding: 2em;
   text-align: center;
 }
-  
+
 .intro {
   max-width: 800px;
   margin: 0 auto;
-}
-  
-footer {
-  background-color: #343a40;
-  color: white;
-  text-align: center;
-  padding: 1em 0;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
-.homepage {
-  background-image: url(../assets/hogwarts.jpg);
-  background-position: center;
-  background-size: cover;
+.intro h2 {
+  font-family: 'harrypotter', Arial, sans-serif;
+  font-size: 3em;
+  color: #fff;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
 }
 
+.namelogo .harrypotter {
+  font-family: 'harrypotter', Arial, sans-serif;
+  font-size: 3em;
+  color: rgb(220, 203, 20);
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+}
 
-.intro {
-  margin: 40px auto;
-  font-weight: bolder;
-  background-color: #ffffff33;
-  text-align: left;
-  padding: 5px 30px 20px 30px;
-  position: relative; 
-  width: 80%;
-  border-radius: 20px;
+.intro p {
+  line-height: 1.6;
 }
 
 .house-section {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-}
-
-.house-section h3{ /*nombres de casa*/
-  font-family: 'harrypotter', Arial, sans-serif !important;
-  font-size: xx-large;
-  color: white(220, 203, 20);
+  margin-top: 30px;
 }
 
 .house-description {
-  flex: 0 0 22%;
+  flex: 0 0 45%;
   box-sizing: border-box;
-  margin: 10px;
-  padding: 5px 30px 20px 30px;
+  margin: 20px;
+  padding: 20px;
   border-radius: 10px;
-  min-width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.house-description h3 {
+  font-family: 'harrypotter', Arial, sans-serif;
+  font-size: 3em;
+  color: #fff;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  letter-spacing: 2px;
+}
+
+.house-description p {
+  color: #eee;
+  line-height: 1.4;
+}
+
+.house-description.hufflepuff {
+  background-color: #ecb939;
+}
+
+.house-description.gryffindor {
+  background-color: #740001;
+}
+
+.house-description.slytherin {
+  background-color: #1a472a;
+}
+
+.house-description.ravenclaw {
+  background-color: #222f5b;
+}
